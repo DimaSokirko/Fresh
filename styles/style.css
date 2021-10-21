@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "BalooChettan2";
+  src: url("../../fonts/BalooChettan2-Regular.woff") format("woff");
+  src: url("../../fonts/BalooChettan2-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "BalooChettan2";
+  src: url("../../fonts/BalooChettan2-Medium.woff") format("woff");
+  src: url("../../fonts/BalooChettan2-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BalooChettan2";
+  src: url("../../fonts/BalooChettan2-SemiBold.woff") format("woff");
+  src: url("../../fonts/BalooChettan2-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetika, sans-serif;
+  color: rgba(10, 25, 2, 0.7);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(10, 25, 2, 0.7);
+  transition: all 0.3s;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1178px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+}
+
+.header {
+  padding: 30px 0;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo img {
+  max-width: 164px;
+  max-height: 65px;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+.header__nav-item {
+  padding: 0 17px;
+}
+
+/*# sourceMappingURL=style.css.map */

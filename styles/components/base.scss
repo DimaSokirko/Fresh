@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "BalooChettan2";
+  src: url("../../fonts/BalooChettan2-Regular.woff") format("woff");
+  src: url("../../fonts/BalooChettan2-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BalooChettan2";
+  src: url("../../fonts/BalooChettan2-Medium.woff") format("woff");
+  src: url("../../fonts/BalooChettan2-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "BalooChettan2";
+  src: url("../../fonts/BalooChettan2-SemiBold.woff") format("woff");
+  src: url("../../fonts/BalooChettan2-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: $main-font;
+  color: $text-color;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  transition: $trs;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1178px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
