@@ -119,7 +119,6 @@ a {
 }
 .content__item {
   counter-reset: section;
-  padding-left: 50px;
 }
 .content__item li {
   position: relative;
