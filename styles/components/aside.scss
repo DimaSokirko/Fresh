@@ -2,8 +2,8 @@
   padding: 60px 0;
 
   &__fruits {
-    display: inline-block;
-    position: absolute;
+    display: block;
+    position: relative;
     &::before {
       position: absolute;
       content: "";
