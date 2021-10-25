@@ -8,6 +8,8 @@
   }
 
   &__logo {
+    line-height: 0;
+
     img {
       max-width: 164px;
       max-height: 65px;
@@ -22,6 +24,37 @@
 
     &-item {
       padding: 0 17px;
+      font-weight: 500;
+
+      a {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 4px;
+
+        &:hover {
+          color: $tittle-color;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 2px;
+          border-radius: 2px;
+          border-color: transparent;
+        }
+      }
+
+      &--active {
+        a {
+          color: $tittle-color;
+          &::before {
+            background-color: $primary-color;
+          }
+        }
+      }
     }
   }
 }

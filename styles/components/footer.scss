@@ -1,0 +1,92 @@
+.footer {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -50px 0 -75px;
+    align-items: flex-start;
+  }
+
+  &__col {
+    padding: 0 50px 0 75px;
+  }
+
+  &__logo {
+    line-height: 0;
+    padding-bottom: 26px;
+
+    img {
+      max-width: 164px;
+      max-height: 65px;
+    }
+  }
+
+  &__info {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4;
+    color: $black;
+    padding: 30px 0;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    margin: 0 -19px;
+
+    &-col {
+      width: 50%;
+      display: inline-block;
+      letter-spacing: normal;
+      padding: 0 19px;
+    }
+
+    &-nav {
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
+
+    &-link {
+      font-size: 16px;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      margin: -22px 0;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &-link {
+      & img {
+        transition: all 0.3s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    left: 2%;
+    max-width: 201px;
+    max-height: 245px;
+    margin-left: -87px;
+    &-bg {
+    }
+  }
+}

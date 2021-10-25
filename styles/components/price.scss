@@ -1,0 +1,100 @@
+.price {
+  padding: 60px 0;
+
+  &__wrap {
+    display: flex;
+    position: relative;
+    margin: 0 -19px;
+  }
+
+  &__col {
+    width: 33.33%;
+    display: inline-block;
+    letter-spacing: normal;
+    padding: 0 19px;
+  }
+
+  &__card {
+    text-align: center;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    border: 1px solid rgba(89, 190, 41, 0.05);
+    border-radius: 30px;
+
+    &:hover {
+      box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__image-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    &__cherry {
+      padding-bottom: 70%;
+    }
+
+    &__amalaki {
+      padding-bottom: 72%;
+    }
+
+    &__accai_berry {
+      padding-bottom: 73%;
+    }
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__rating {
+    margin-bottom: 5px;
+
+    & img {
+      max-width: 120px;
+      max-height: 20px;
+    }
+  }
+
+  &__link {
+    padding-bottom: 5px;
+    font: $h3-font;
+    color: $black;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__tariff {
+    padding-bottom: 5px;
+    font-size: 35px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: $green;
+  }
+
+  &__info {
+    padding-bottom: 38px;
+    font-size: 16px;
+  }
+
+  &__btn {
+    padding-bottom: 45px;
+  }
+}
