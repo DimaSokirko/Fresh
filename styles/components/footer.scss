@@ -1,8 +1,25 @@
 .footer {
+  padding: 50px 0 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(4, 8, 2, 0.2) 30%,
+      rgba(89, 190, 41, 0.2) 50%,
+      rgba(4, 8, 2, 0.2) 70%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
   &__wrap {
     display: flex;
     justify-content: space-between;
-    margin: 0 -50px 0 -75px;
+    margin: 86px -50px 0 -75px;
     align-items: flex-start;
   }
 
@@ -30,19 +47,19 @@
     font-size: 22px;
     line-height: 1.4;
     color: $black;
-    padding: 30px 0;
+    padding-bottom: 30px;
   }
 
   &__item {
     display: flex;
     position: relative;
-    margin: 0 -19px;
+    margin: 0 -42px;
 
     &-col {
       width: 50%;
       display: inline-block;
       letter-spacing: normal;
-      padding: 0 19px;
+      padding: 0 42px;
     }
 
     &-nav {
@@ -61,16 +78,21 @@
   &__social {
     display: flex;
     align-items: center;
+    margin: -22px 0 0 -12px;
 
     &-item {
-      margin: -22px 0;
+      padding-right: 25px;
       &:last-child {
         padding-right: 0;
       }
     }
 
     &-link {
+      margin: 0;
       & img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
         transition: all 0.3s;
 
         &:hover {
@@ -85,6 +107,6 @@
     left: 2%;
     max-width: 201px;
     max-height: 245px;
-    margin-left: -87px;
+    margin-left: -77px;
   }
 }
