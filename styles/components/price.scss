@@ -12,7 +12,6 @@
     display: inline-block;
     letter-spacing: normal;
     padding: 0 19px;
-    overflow: hidden;
   }
 
   &__card {
@@ -21,6 +20,7 @@
     transition: all 0.3s;
     border: 1px solid rgba(89, 190, 41, 0.05);
     border-radius: 30px;
+    overflow: hidden;
 
     &:hover {
       box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
