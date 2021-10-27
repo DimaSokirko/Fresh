@@ -330,7 +330,6 @@ input::placeholder {
   display: inline-block;
   letter-spacing: normal;
   padding: 0 19px;
-  overflow: hidden;
 }
 .price__card {
   text-align: center;
@@ -338,6 +337,7 @@ input::placeholder {
   transition: all 0.3s;
   border: 1px solid rgba(89, 190, 41, 0.05);
   border-radius: 30px;
+  overflow: hidden;
 }
 .price__card:hover {
   box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
@@ -633,7 +633,7 @@ input::placeholder {
   padding-right: 0;
 }
 .footer__social-link {
-  margin: 0;
+  display: block;
 }
 .footer__social-link img {
   width: 45px;
